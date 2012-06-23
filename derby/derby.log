@@ -1,0 +1,11 @@
+Sat Jun 23 17:00:37 SGT 2012 : Apache Derby Network Server - 10.8.2.2 - (1181258) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Sat Jun 23 18:03:34 SGT 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-0138-1892-4c26-00007e10da84 
+on database directory D:\work\fsecure\derby\DATABASE  with class loader sun.misc.Launcher$AppClassLoader@affc70 
+Loaded from file:/D:/work/fsecure/derby/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_04-b20
+user.dir=D:\work\fsecure\derby
+derby.system.home=D:\work\fsecure\derby
+Database Class Loader started - derby.database.classpath=''

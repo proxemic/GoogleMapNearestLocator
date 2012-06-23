@@ -1,0 +1,27 @@
+html { 
+    height: 100%
+}
+
+body { 
+    height: 100%;            
+}
+
+#location_info{
+    width: 100%;
+    height: 10%;
+    font-size: 18pt;
+    text-align: center;
+    background-color: rgb(245,244,223);
+}
+    
+#map_canvas.main-container{
+    width:100%;
+    height:90%;
+}
+
+.error{
+    font-family: Arial;
+    font-size: 18pt;
+    color:red;
+    font-weight:normal;
+}
