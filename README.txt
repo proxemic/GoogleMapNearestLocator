@@ -9,9 +9,10 @@ Step to run the test
 =====================
 1. Clone from test repo.
 2. Start derby database by running /derby/start.cmd, or run "java -jar derbyrun.jar server start" in terminal/command prompt
-3. Open another terminal/command prompt and go into /fsecure/ directory and Run "mvn install"
+(Skip step 3 if you do not want to rebuild the war, but using the provided fsecure.war)
+3. Open another terminal/command prompt and go into /fsecure/ directory and Run "mvn install" 
 4. Start application server / web container (for eg:tomcat)
-5. Deploy fsecure.war generated in /fsecure/target/ into web container or application server.
+5. Deploy fsecure.war generated in /fsecure/target/ into web container or application server. (Or use the provided fsecure.war)
 6. Access to <host>:<port>/fsecure
 
 To test the functionality
