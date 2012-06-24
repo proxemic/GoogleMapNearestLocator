@@ -29,6 +29,7 @@ function getNearestLocation(lat, lng) {
         dataType: 'html',
         processData: true,
         beforeSend: function(){
+            $('#location_info').find('label').remove();
             $('#location_info').append("<img src='"+context+"/images/ajax-loader.gif'></img>");
             $('#location_info').show('medium');
         },
