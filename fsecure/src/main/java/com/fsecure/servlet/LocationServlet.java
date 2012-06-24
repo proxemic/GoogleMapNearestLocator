@@ -30,7 +30,7 @@ public class LocationServlet extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    private LocationManager locationManager = ManagerService.getLocationManager();
+    
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -42,7 +42,7 @@ public class LocationServlet extends HttpServlet {
         try {
             float longitude = Float.parseFloat(request.getParameter("x"));
             float latitude = Float.parseFloat(request.getParameter("y"));
-            LocationManager lm = new LocationManager();
+            LocationManager lm = ManagerService.getLocationManager();
             JSONObject jsonLocation = lm.getNearestLocation(latitude, longitude);
 
             out.println(jsonLocation);

@@ -13,6 +13,6 @@
         <div id="map_canvas" class="main-container"></div>
     </body>
 
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 
 </html>

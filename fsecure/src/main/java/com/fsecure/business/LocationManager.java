@@ -6,11 +6,10 @@ package com.fsecure.business;
 
 import com.fsecure.base.PersistenceManagerService;
 import com.fsecure.entity.LocationEntity;
-import java.math.BigDecimal;
-import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Query;
+import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import org.apache.log4j.Logger;
 
@@ -43,7 +42,9 @@ public class LocationManager extends Manager {
 
             LocationEntity locEnt = (LocationEntity) q.getSingleResult();
             jsonObject = new JSONObject();
-            BigDecimal[] locationArr = {locEnt.getLocationPK().getLongitude(), locEnt.getLocationPK().getLatitude()};
+            JSONArray locationArr = new JSONArray();
+            locationArr.add(locEnt.getLocationPK().getLongitude());
+            locationArr.add(locEnt.getLocationPK().getLatitude());
             jsonObject.put("location", locationArr);
             jsonObject.put("name", locEnt.getName());
             jsonObject.put("is_building", locEnt.getIsBuilding());
